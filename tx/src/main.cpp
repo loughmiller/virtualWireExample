@@ -23,7 +23,7 @@ void loop()
   Serial.println("transmitting");
   msg[4] = count;
   digitalWrite(led_pin, HIGH); // Flash a light to show transmitting
-  vw_send((uint8_t *)msg, 7);
+  vw_send((uint8_t *)msg, 5);
   vw_wait_tx(); // Wait until the whole message is gone
   digitalWrite(led_pin, LOW);
   delay(200);
