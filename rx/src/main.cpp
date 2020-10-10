@@ -5,7 +5,6 @@ const int receive_pin = 12;
 
 void setup()
 {
-    delay(1000);
     while(!Serial && millis() < 10000);
     Serial.println("setup");
 
